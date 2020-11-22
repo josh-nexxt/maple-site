@@ -21,12 +21,12 @@
 
 // Font.
 	$font: (
-		family:						('Source Sans Pro', sans-serif),
+		family:						('Avenir', 'Arial', sans-serif),
 		family-fixed:				('Courier New', monospace),
 		weight:						300,
 		weight-bold:				600,
 		letter-spacing:				0.2rem,
-		letter-spacing-heading:		0.5rem
+		letter-spacing-heading:		default
 	);
 
 // Palette.
@@ -34,10 +34,12 @@
 		bg:							#1b1f22,
 		bg-alt:						#000000,
 		bg-overlay:					rgba(19,21,25,0.5),
-		fg:							#ffffff,
-		fg-bold:					#ffffff,
+		fg:							#000000,
+		fg-bold:					#000000,
 		fg-light:					rgba(255,255,255,0.5),
-		border:						#ffffff,
-		border-bg:					rgba(255,255,255,0.075),
-		border-bg-alt:				rgba(255,255,255,0.175)
+		border:						#000000,
+		border-bg:					rgba(0,0,0,0.075),
+		border-bg-alt:				rgba(0,0,0,0.175),
+		popup-bg:					#ffffff,
+		hot-pink:					#F17184
 	);

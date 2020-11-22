@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
+import icon_clock from '../images/icon_clock.png'
+import icon_computer from '../images/icon_computer.png'
+import icon_share from '../images/icon_share.png'
+import banner_isl from '../images/banner_isl.png'
 import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
@@ -22,65 +24,46 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="instructions"
+          className={`${this.props.article === 'instructions' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
-          <span className="image main">
-            <img src={pic01} alt="" />
-          </span>
-          <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
-          {close}
-        </article>
-
-        <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Work</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          <h2 className="major">Instructions</h2>
+          <div className="image-with-span">
+            <img src={icon_computer} alt="" />
+            <span>
+              This web-based assessment works best on <b>Chrome, Edge or Firefox</b> (if they are not
+              your default browser, copy and paste the link to one of those browsers). Meerus the
+              chatbot will guide you through the various sections. The questions are accompanied by
+              images, so pick on the images that reflect the way you naturally behave or interact rather
+              than how you think you should behave. There are no right or wrong answers. We
+              recognize that your responses to some of the questions could be a “maybe” or “it
+              depends”. Go with your instinctive response and what you are likely to do most often.
+            </span>
+          </div>
+          <div className="image-with-span">
+            <img src={icon_clock} alt="" />
+            <span>
+              The test will take approximately 25-30 minutes to complete. For a good user experience,
+              we request that you complete the assessment in one sitting. The time you take to
+              complete will depend on whether you respond instinctively or give a lot of care and
+              thought to your responses. There are open-ended questions that require a written
+              response. Please try and respond to the questions as you would in a work setting. Our
+              advice is to relax, reflect and have fun!
+            </span>
+          </div>
+          <div className="image-with-span">
+            <img src={icon_share} alt="" />
+            <span>
+              The current beta version is limited to four profiles. More profiles and strategies to
+              develop your intercultural competence will be available in the final release version.
+              Thank-you for contributing to our research. It would be very helpful <b>if you could share
+              this beta test across your networks</b> and to whomever you feel would benefit or be
+              interested in such an assessment.
+            </span>
+          </div>
           {close}
         </article>
 
@@ -92,6 +75,44 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">About</h2>
+          <span className="image main no-overlay">
+            <img src={banner_isl} alt="Intercultural Skills Lab - Banner" />
+          </span>
+          <p>
+            Culture is diverse, vibrant, complex and intricate and the MAPLE (Mutual Acculturation Profile
+            and Learning Engine) cultural assessment tool captures this richness and energy in its design
+            and structure. Using a gamified and visual approach the tool offers insights into how cultural
+            values influence our behaviour and communication styles in the workplace. Led by our friendly
+            chat-bot Meerus the user experience is engaging, interactive and self-reflective.
+          </p>
+          <p>
+            Traditionally culture has been associated with the countries it resides in. Current cultural
+            assessment tools often use national boundaries as a proxy for culture and provide profiles in
+            relation to a nationality. What makes MAPLE unique, is that, it captures both cultural values and
+            communicating styles to create profiles that are not localized and set in nationality. The MAPLE
+            reports use profile names that are synthetic and imaginary but the cultures they represent are
+            real and are reflective of the cultural identities that globalization influences and enhances.
+          </p>
+          <p>
+            The Intercultural Skills Lab at Rotman promotes a deeper understanding of intercultural
+            competencies to support individuals and organizations to function effectively across cultures.
+            When a person learns about the cultural values that drive them, they gain a real understanding
+            of why they behave, interact and communicate the way they do and how others perceive and
+            relate to them. This understanding can be used to improve their daily interactions in any cross-
+            cultural situation, adapt to different work environments and create inclusive teams and
+            workplaces.
+          </p>
+          {close}
+        </article>
+
+        <article
+          id="share"
+          className={`${this.props.article === 'share' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Share</h2>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
@@ -115,7 +136,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form action="https://getform.io/f/c1bcca87-de02-4091-a305-8522e03cc995" method="POST">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -137,34 +158,6 @@ class Main extends React.Component {
               </li>
             </ul>
           </form>
-          <ul className="icons">
-            <li>
-              <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
-              >
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-          </ul>
           {close}
         </article>
       </div>
