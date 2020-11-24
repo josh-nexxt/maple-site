@@ -132,7 +132,7 @@ const Header = props => {
         <nav className="corner-nav">
           <ul className="ul-border">
             <li>
-              <Link to='https://inca.nexxt.in/p/MAPLE_DEMO'>
+              <Link to='https://inca.nexxt.in/p/MAPLEBETA'>
                 <button id="test-button">
                   Take The Test
                 </button>
