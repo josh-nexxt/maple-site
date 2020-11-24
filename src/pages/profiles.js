@@ -22,7 +22,7 @@ class LandingPage extends React.Component {
   componentDidMount () {
     this.timeoutId = setTimeout(() => {
         this.setState({loading: ''});
-        console.log("props.location.hash:", props.location.hash);
+        console.log("props.location.hash:", this.props.location.hash);
     }, 100);
   }
 
