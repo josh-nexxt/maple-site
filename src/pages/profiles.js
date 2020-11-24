@@ -12,7 +12,7 @@ class LandingPage extends React.Component {
       isArticleVisible: true,
       timeout: true,
       articleTimeout: true,
-      article: 'profiles',
+      article: props.location.hash ? props.location.hash.substr(1) : 'profiles',
       loading: 'is-loading'
     }
     this.handleSwitchArticle = this.handleSwitchArticle.bind(this)
