@@ -42,9 +42,26 @@ class LandingPage extends React.Component {
 
   handleSwitchArticle(article) {
 
+
     this.setState({
+      articleTimeout: !this.state.articleTimeout,
+      timeout: !this.state.timeout,
       article
     })
+
+    setTimeout(() => {
+      this.setState({
+        timeout: !this.state.timeout
+      })
+    }, 10)
+
+    setTimeout(() => {
+      this.setState({
+        articleTimeout: !this.state.articleTimeout
+      })
+    }, 10)
+
+
 
 
     // this.setState({
