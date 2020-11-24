@@ -12,7 +12,7 @@ class LandingPage extends React.Component {
       isArticleVisible: true,
       timeout: true,
       articleTimeout: true,
-      article: 'profiles',
+      article: props.location.hash ? props.location.hash.substr(1) : 'profiles',
       loading: 'is-loading'
     }
     this.handleSwitchArticle = this.handleSwitchArticle.bind(this)
@@ -21,8 +21,13 @@ class LandingPage extends React.Component {
 
   componentDidMount () {
     this.timeoutId = setTimeout(() => {
-        this.setState({loading: ''});
+        console.log("props.location.hash:", this.props.location.hash);
+        if (this.props.location.hash) this.handleSwitchArticle(this.props.location.hash.substr(1));
     }, 100);
+    this.timeoutId = setTimeout(() => {
+        console.log("props.location.hash:", this.props.location.hash);
+        if (this.props.location.hash) this.handleSwitchArticle(this.props.location.hash.substr(1));
+    }, 2000);
   }
 
   componentWillUnmount () {
@@ -35,12 +40,12 @@ class LandingPage extends React.Component {
     this.wrapperRef = node;
   }
 
-  handleOpenArticle(article) {
+  handleSwitchArticle(article) {
 
-    this.handleCloseArticle();
 
     this.setState({
-      isArticleVisible: !this.state.isArticleVisible,
+      articleTimeout: !this.state.articleTimeout,
+      timeout: !this.state.timeout,
       article
     })
 
@@ -48,21 +53,15 @@ class LandingPage extends React.Component {
       this.setState({
         timeout: !this.state.timeout
       })
-    }, 325)
+    }, 10)
 
     setTimeout(() => {
       this.setState({
         articleTimeout: !this.state.articleTimeout
       })
-    }, 350)
+    }, 10)
 
-  }
 
-  handleSwitchArticle(article) {
-
-    this.setState({
-      article
-    })
 
 
     // this.setState({
@@ -94,7 +93,6 @@ class LandingPage extends React.Component {
               onOpenArticle={this.handleSwitchArticle}
               articleTimeout={this.state.articleTimeout}
               article={this.state.article}
-              onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
             />
             <LandingFooter timeout={this.state.timeout} />

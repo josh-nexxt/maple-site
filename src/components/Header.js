@@ -125,15 +125,14 @@ const Header = props => {
         <div className="content">
           <div className="inner-logo"></div>
           <div className="inner">
-            <h1>MAPLE</h1>
+            <h1>MAPLE beta 2.1</h1>
             <h2>A cultural assessment tool</h2>
-            <h6>BETA VERSION</h6>
           </div>
         </div>
         <nav className="corner-nav">
           <ul className="ul-border">
             <li>
-              <Link to='https://inca.nexxt.in/p/MAPLE_DEMO'>
+              <Link to='https://inca.nexxt.in/p/MAPLEBETA'>
                 <button id="test-button">
                   Take The Test
                 </button>

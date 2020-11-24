@@ -98,7 +98,11 @@ class LandingMain extends React.Component {
         >
           <h2 className="major">NOUCHUKI</h2>
           <div className="profile">
+            <div className="profile-image">
+              <img src={profile_beehive_500} alt="Nouchuki Profile Picture" />
+            </div>
             <div className='profile-description'>
+              <h4>pronounced as <i>noo-chu-ki</i></h4>
               <p>
                 <b>Nouchuki</b>, the 24-hour industrial powerhouse that is as deeply traditional as it is futuristic, is the perfect
                 place for you to work and live. Like the Nouchukiian rainbow cake, Muzkeros, you are layered – and your
@@ -136,9 +140,6 @@ class LandingMain extends React.Component {
                 like done to you.
               </p>
             </div>
-            <div className="profile-image">
-              <img src={profile_beehive_500} alt="Nouchuki Profile Picture" />
-            </div>
           </div>
           <a href={NOUCHUKI_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
           <a onClick={() => this.props.onOpenArticle('profiles')} download class="button-3d btnPush btnBlue">View All Profiles</a>
@@ -154,7 +155,11 @@ class LandingMain extends React.Component {
         >
           <h2 className="major">RILSUKYA</h2>
           <div className="profile">
+            <div className="profile-image">
+              <img src={profile_beach_500} alt="Rilsukya Profile Picture" />
+            </div>
             <div className='profile-description'>
+              <h4>pronounced as <i>ril-su-kiya</i></h4>
               <p>
                 <b>Rilsukya</b> is your paradise. The Rilsukese are essentially warm social creatures who value their
                 relationships, are supportive and make the effort to bring people together. The culture fosters strong
@@ -193,9 +198,6 @@ class LandingMain extends React.Component {
                 camaraderie.
               </p>
             </div>
-            <div className="profile-image">
-              <img src={profile_beach_500} alt="Rilsukya Profile Picture" />
-            </div>
           </div>
           <a href={RILSUKYA_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
           <a onClick={() => this.props.onOpenArticle('profiles')} download class="button-3d btnPush btnBlue">View All Profiles</a>
@@ -210,7 +212,11 @@ class LandingMain extends React.Component {
         >
           <h2 className="major">ANJOGEY</h2>
           <div className="profile">
+            <div className="profile-image">
+              <img src={profile_bridge_500} alt="Anjogey Profile Picture" />
+            </div>
             <div className='profile-description'>
+              <h4>pronounced as <i>ann-jo-gi</i></h4>
               <p>
                 You are an über disciplined and determined individual. Your methodical way of thinking and efficiency
                 makes <b>Anjogey</b>, an ideal place for you. Anjogians believe that winning is everything and healthy
@@ -248,9 +254,6 @@ class LandingMain extends React.Component {
                 quality, unusual simplicity, integrated into the ecosystem and elegant.
               </p>
             </div>
-            <div className="profile-image">
-              <img src={profile_bridge_500} alt="Anjogey Profile Picture" />
-            </div>
           </div>
           <a href={ANJOGEY_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
           <a onClick={() => this.props.onOpenArticle('profiles')} download class="button-3d btnPush btnBlue">View All Profiles</a>
@@ -266,7 +269,11 @@ class LandingMain extends React.Component {
         >
           <h2 className="major">WALTHANOO</h2>
           <div className="profile">
+            <div className="profile-image">
+              <img src={profile_waterfall_500} alt="Walthanoo Profile Picture" />
+            </div>
             <div className='profile-description'>
+              <h4>pronounced as <i>wal-tha-noo</i></h4>
               <p>
                 <b>Walthanoo</b> is the perfect place for you to live and work! Its filled with energy and opportunities.
                 Walthanooers, like yourself, have a clear vision for their lives and they pursue their passions by pushing
@@ -303,9 +310,6 @@ class LandingMain extends React.Component {
                 your best. You love the energy of Walthanoo and your drive and determination will help you prosper
                 here.
               </p>
-            </div>
-            <div className="profile-image">
-              <img src={profile_waterfall_500} alt="Walthanoo Profile Picture" />
             </div>
           </div>
           <a href={WALTHANOO_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
