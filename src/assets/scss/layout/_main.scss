@@ -21,16 +21,17 @@
 	}
 	div {
 		display: inline-block;
-		margin-right: 20px;
+		// margin-right: 20px;
+		padding: 0 25px;
 		cursor: pointer;
 	}
 	h3 {
 		color: _palette(hot-pink);
 	}
 }
-@media screen and (min-width:1000px) and (max-width:1360px) {
+@media screen and (min-width:1000px) and (max-width:1500px) {
 	.profiles-container {
-		width: 80%;
+		width: 75%;
 	}
 }
 .profile {
@@ -38,18 +39,20 @@
 	margin-bottom: 40px;
 	.profile-description {
 		border: 1px solid rgba(0, 0, 0, 0.3);
+		border-radius: 10px;
 		height: 500px;
 		overflow: scroll;
-		padding: 15px;
+		padding: 20px;
 		text-align: left;
-	}
-	.profile-image {
 		margin-left: 5%;
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 	@media (max-width: 1023px) {
 		display: block;
 		> * {
-			width: 80%;
+			width: 90%;
 			margin: 40px auto !important;
 		}
 		img {
