@@ -47,13 +47,8 @@ nav.top-nav {
         }
 
 
-        &:hover,
-        &:focus {
-          background-color: _palette(border-bg);
-        }
-
-        &:active {
-          background-color: _palette(border-bg-alt);
+        &:hover {
+          background-color: _palette(light-blue);
         }
       }
     }
@@ -62,8 +57,9 @@ nav.top-nav {
 nav.corner-nav {
   #test-button {
     padding: 1.5rem 2rem 4rem 2rem;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
+    color: _palette(hot-pink) !important;
   }
   ul.ul-border {
     border: solid _size(border-width) _palette(border);
@@ -94,15 +90,11 @@ nav.corner-nav {
         font-size: 0.8rem;
         font-family: _font(family);
         border: none;
+        border-radius: 5px;
         box-shadow: none;
 
-        &:hover,
-        &:focus {
-          background-color: _palette(border-bg);
-        }
-
-        &:active {
-          background-color: _palette(border-bg-alt);
+        &:hover {
+          background-color: _palette(light-blue);
         }
       }
     }
@@ -222,6 +214,14 @@ nav.corner-nav {
       padding: 3rem 2rem;
       max-height: 40rem;
       overflow: hidden;
+
+      h1 {
+        color: _palette(hot-pink);
+        text-transform: none;
+      }
+      h2 {
+        opacity: 0.9;
+      }
 
       > :last-child {
         margin-bottom: 0;
