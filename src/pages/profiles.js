@@ -23,6 +23,7 @@ class LandingPage extends React.Component {
     this.timeoutId = setTimeout(() => {
         this.setState({loading: ''});
         console.log("props.location.hash:", this.props.location.hash);
+        if (this.props.location.hash) this.handleSwitchArticle(this.props.location.hash.substr(1));
     }, 100);
   }
 
@@ -34,29 +35,6 @@ class LandingPage extends React.Component {
 
   setWrapperRef(node) {
     this.wrapperRef = node;
-  }
-
-  handleOpenArticle(article) {
-
-    this.handleCloseArticle();
-
-    this.setState({
-      isArticleVisible: !this.state.isArticleVisible,
-      article
-    })
-
-    setTimeout(() => {
-      this.setState({
-        timeout: !this.state.timeout
-      })
-    }, 325)
-
-    setTimeout(() => {
-      this.setState({
-        articleTimeout: !this.state.articleTimeout
-      })
-    }, 350)
-
   }
 
   handleSwitchArticle(article) {
@@ -95,7 +73,6 @@ class LandingPage extends React.Component {
               onOpenArticle={this.handleSwitchArticle}
               articleTimeout={this.state.articleTimeout}
               article={this.state.article}
-              onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
             />
             <LandingFooter timeout={this.state.timeout} />
