@@ -60,6 +60,9 @@ nav.corner-nav {
     font-size: 24px;
     font-weight: 600;
     color: _palette(hot-pink) !important;
+    &:hover {
+      background-color: _palette(border) !important;
+    }
   }
   ul.ul-border {
     border: solid _size(border-width) _palette(border);
