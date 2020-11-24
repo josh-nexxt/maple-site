@@ -21,10 +21,13 @@ class LandingPage extends React.Component {
 
   componentDidMount () {
     this.timeoutId = setTimeout(() => {
-        this.setState({loading: ''});
         console.log("props.location.hash:", this.props.location.hash);
         if (this.props.location.hash) this.handleSwitchArticle(this.props.location.hash.substr(1));
     }, 100);
+    this.timeoutId = setTimeout(() => {
+        console.log("props.location.hash:", this.props.location.hash);
+        if (this.props.location.hash) this.handleSwitchArticle(this.props.location.hash.substr(1));
+    }, 2000);
   }
 
   componentWillUnmount () {
