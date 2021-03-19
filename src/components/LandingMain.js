@@ -13,6 +13,9 @@ import profile_beehive_500 from '../images/profile_beehive_500.png'
 import profile_beach_250 from '../images/profile_beach_250.png'
 import profile_beach_500 from '../images/profile_beach_500.png'
 import banner_isl from '../images/banner_isl.png'
+import faq_meerus from '../images/faq_meerus.png'
+import faq_uniqueness from '../images/faq_uniqueness.png'
+import faq_research from '../images/faq_research.png'
 
 class LandingMain extends React.Component {
   render() {
@@ -23,6 +26,101 @@ class LandingMain extends React.Component {
         className="landing"
         style={{display: this.props.timeout ? 'block' : 'none', minWidth: '100%'}}
       >
+        <article
+          id="faq"
+          className={`no-popup ${this.props.article === 'faq' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none', textAlign: 'left' }}
+        >
+          <h2 className="major">Frequently Asked Questions</h2>
+          <p>
+            Hello, I’m Meerus! My name comes from the Latin “mirus” which means wonderful, marvelous, surprising,
+            awesome and amazing. I find cultures fascinating and complex.  I have learned that like the motherboard
+            in a computer, holds, links and allows communication between all the components of a system, culture and
+            cultural values are what binds a group of people to each other. In the future, I will be powered by AI. 
+            I learn from my interactions with you and so the more you share the more I learn.
+          </p>
+          <div className="image-with-span">
+            <img src={faq_meerus} alt="Meerus" />
+            <span>
+              <i>Here are some of the questions that I am often asked!</i>
+            </span>
+          </div>
+          <ol>
+            <li>
+              <h4>What is MAPLE and what makes it different from other cultural assessment tools?</h4>
+              <p>Walk into any Canadian workplace, and you will find yourself working with first generation immigrants, internationally educated professionals, and Canadian born individuals from various ethno-cultural backgrounds. The <b>Mutual Acculturation Profile & Learning Engine (MAPLE)</b> is a comprehensive assessment model that measures cognitive diversity or diversity of thought by assessing cultural style, the communication style, and intercultural competence for individuals, teams and organizations.  MAPLE provides the most objective and universal measurement of the ability and potential to embrace and integrate diversity. It is an intercultural competency development platform that allows individuals, teams and organizations to assess and grow their intercultural competency. MAPLE is proudly Canadian and the first comprehensive cultural model built in Canada by Rotman School of Management and Nexxt Intelligence Inc.</p>  
+              <p>The assessment should take no longer than 10 - 20 minutes to complete and includes a variety of questions designed to identify and understand your cultural values. Here is a list of the types of questions you would expect to answer (not exhaustive):</p>
+              <ul>
+                <li>Demographic questions</li>
+                <li>Scenario-based questions</li>
+                <li>Behavioural questions</li>
+                <li>Role-playing questions</li>
+              </ul>
+            </li>
+            <li>
+              <h4>What can I learn about myself from the profile given?</h4>
+              <p>Your profile will include insights on your cultural values, how it may impact your decisions at the workplace, and how you could better manage a diverse team. Your profile is created by your responses and focuses on two key cultural continuums: your Identity and Power Distance.</p>
+              <p><b>What is Identity?</b> After completing a project, do you celebrate the team’s success or would you prefer being singled out and praised as an individual? Individualism and Collectivism focuses on how society views the self. Individualistic cultures see the self as independent and tend to value individual achievements whereas Collectivistic cultures are highly interdependent. To learn more, please <a class="pink" target="_blank" href="https://www.mindtools.com/pages/article/seven-dimensions.htm">click here</a>.</p>
+              <p><b>What is Power Distance?</b> At your workplace, do you expect your manager to consult the team before making a decision? Are you comfortable going into your manager’s office and asking for a promotion when you think you deserve it? Both of these examples are related to Power Distance and how a society handles inequalities amongst people. To learn more, please <a class="pink" target="_blank" href="https://hi.hofstede-insights.com/national-culture">click here</a>.</p>
+              <p>Please note that there is no better or worse cultural continuum. Everyone lands differently on the spectrum and research supports that there are benefits on each end. Overall, our objective is to broaden your understanding of the impact of culture and empower you and others to join the conversation of creating a more productive and interculturally competent workplace in Canada.</p>
+            </li>
+            <li>
+              <h4>How many profiles are there currently? Where did the profile names come from?</h4>
+              <p>There are currently four profiles. By participating in the MAPLE BETA assessment,  you will be contributing to our research in order to create more diverse profiles. With more data, we can further our research and analysis.</p>
+              <p>To be a truly global assessment, the profile names should not have associations with words in any language, as we all have reactions and interpretations with words. The profile names and the quotes in each profile was developed by the Intercultural Skills Lab. Maybe some words sound similar to a language you speak!</p>
+            </li>
+            <li>
+              <h4>How can the MAPLE assessment be implemented in the workplace?</h4>
+              <p>Once the MAPLE assessment is rolled out, it will help facilitate more effective collaboration across employees, as every individual will have a better understanding of each person’s cultural values and work styles. Being more aware and respectful of how an individual operates is vital in allowing for successful teamwork.</p>
+            </li>
+            <li>
+              <h4>Is this like any personality or mental tests I might have taken before?</h4>
+              <p>The MAPLE tool assesses you on values and behavior that are deeply rooted in culture and is used to delve deeper into your culture, working styles, and values. Take a look at the pyramid below for differences between personality, culture, and human nature.</p>
+              <center><img src={faq_uniqueness} alt="Human Uniqueness" /></center>
+            </li>
+            <li>
+              <h4>Do I need to be fluent in the language I’m taking the assessment in?</h4>
+              <p>To ensure accurate profile results, participants should have a working knowledge of English. Our purpose in creating easy, universal images is so that people who are not highly fluent could still take the assessment. While MAPLE is currently only available in English, as the tool evolves, we plan on potentially offering the assessment in French, Spanish, Mandarin, and more.</p>
+            </li>
+            <li>
+              <h4>What research are the profiles based on?</h4>
+              <p>The MAPLE assessment tool is built from our research and the four profiles currently available reflect our data gathered thus far. In August 2016, The Intercultural Skills Lab conducted a global-scale study on cultural style in 130 countries. The study evaluated 17 dimensions of culture based on cultural and intercultural communication theories (Image 1). The purpose of this study was an updated understanding of cultural orientation by country of birth, country of residence, gender, age, etc. Alongside secondary research from research experts in Cultural Style, Communication Style, and Cross-Cultural Competency, our study had three important conclusions:</p>
+              <ol>
+                <li>The deepest layer of culture that is often less aware and less articulated but tends to be the fundamental driving force of observed behavior and preferences is the Cultural DNA.</li>
+                <li>There is a need for a truly global perspective on cultural dimensions and not simply from the established Anglo-Saxon point-of-view.</li>
+                <li>To reflect today’s Canada, the focus must be on integration rather than adaptation.</li>
+              </ol>
+              <center><img src={faq_research} alt="MAPLE Research" /></center>
+            </li>
+            <li>
+              <h4>What vision does the Intercultural Skills Lab have for the MAPLE tool in the future? When will MAPLE be fully launched?</h4>
+              <p>Our vision for MAPLE is threefold: measure both cultural profile and competency development, leverage technology to ensure minimal linguistic and cultural bias, and enable individuals, employers, and service-providers across Canada to access this tool in training programs.</p>
+              <p>Our goal is to launch MAPLE by Spring 2022. The more data we collect from the MAPLE BETA, the faster we will be able to roll out the final version and the more accurate the tool can become! We hope to see MAPLE changing the conversation about culture and be an integral component of any cultural training program for organizations in Canada.</p>
+            </li>
+            <li>
+              <h4>Where can I learn more about diversity and multiculturalism in the workplace?</h4>
+              <p>To learn more about diversity and multiculturalism in the workplace, check out the <a class="pink" target="_blank" href="https://www.rotman.utoronto.ca/ProfessionalDevelopment/InterculturalSkillsLab">Intercultural Skills Lab</a> at the Rotman School of Management.</p>
+            </li>
+          </ol>
+          <h4>Bibliography</h4>
+          <ul>
+            <li>Matsumoto D., Kouznetsova, N., Ray R., Ratzlaff C., Biehl M., & Raroque, J. (1999). Psychological culture, physical health, and subjective well-being. Journal of Gender, Culture, and Health, 4, 1-18.</li>
+            <li>Guess, C. (2004). Decision Making in Individualistic and Collectivistic Cultures. Online Readings in Psychology and Culture, 4(1). https://doi.org/10.9707/2307-0919.1032</li>
+            <li>Chen, Guo-ming, and Ran An. 2009. "A Chinese Model of Intercultural Leadership Competence." In The SAGE</li>
+            <li>Handbook of Intercultural Competence, ed. Darla K. Deardorff. pp. 196-208. Thousand Oaks, CA: Sage</li>
+            <li>Nwosu, Peter. 2009. "Understanding Africans’ Conceptualizations of Intercultural Competence." In The SAGE</li>
+            <li>Handbook of Intercultural Competence, ed. Darla K. Deardorff. pp. 158-178. Thousand Oaks, CA: Sage.</li>
+            <li>Spitzberg, Brian, and Gabrielle Changnon. 2009. "Conceptualizing Intercultural Competence.” In The SAGE Handbook</li>
+            <li>Triandis, H. C.(2001). Individualism-collectivism and personality. Journal of Personality, 69, 907– 924</li>
+            <li>Markus, H. R. & Kitayama, S. (1991). Culture and the self: Implications for cognition, emotion, and motivation. Psych Review, 98, 224-253.</li>
+            <li>Bennett, Milton. 1993. "Toward Ethnorelativism: A Developmental Model of Intercultural Sensitivity." In Education for the Intercultural Experience, ed. R. Michael Paige. pp. 21-71. Yarmouth, ME: Intercultural Press.</li>
+            <li>Byram, Michael. 1997. Teaching and Assessing Intercultural Communicative Competence. Clevedon: Multilingual Matters of Intercultural Competence, ed. Darla K. Deardorff. pp. 2-52. Thousand Oaks, CA: Sage.</li>
+            <li>Zaharna, R.S. 2009. "An Associative Approach to Intercultural Communication Competence in the Arab World.” In The SAGE Handbook of Intercultural Competence, ed. Darla K. Deardorff. pp. 179-195. Thousand Oaks, CA: Sage.</li>
+          </ul>
+        </article>
+
         <article
           id="about"
           className={`no-popup ${this.props.article === 'about' ? 'active' : ''} ${
@@ -116,16 +214,14 @@ class LandingMain extends React.Component {
                 In the workplace, you are efficient, skilled, and deeply rooted in an “all for one and one for all” mindset.
                 You are happiest when working behind the scenes toward a common goal. You value humility and have
                 a tendency to underplay your accomplishments and may not always receive the accolades you deserve.
-                However, you wouldn’t want public praise anyway, as you sometimes feel embarrassed by overt
-                expressions of emotions both positive and negative. When others express themselves openly, you may
-                feel that it’s excessive or even inconsiderate. At work, you’re a responsible employee, so people easily
+                At work, you’re a responsible employee, so people easily
                 depend on you. You can be ambitious, more often not just for yourself, but also for your colleagues;
                 and you will step-up and support team- members to ensure that your team meets its goals or targets.
               </p>
               <p>
-                When in a leadership role, you are supportive and directive. You work on forging a sense of commitment
+                When in a leadership role, you prefer to be supportive and directive. You work on forging a sense of commitment
                 and loyalty and focus on maintaining group harmony to inspire improved performance and productivity.
-                Nouchukiians have an innate desire to connect with others and as a leader you take the effort to know
+                Nouchukiians have an innate desire to connect with others and as a leader you like to make the effort to know
                 what drives and motivates your team. In making decisions you factor in what others need—or at least
                 what you think they need. Instinctively, when making decisions or resolving conflict you use evaluative
                 criteria that show a high concern for everyone’s needs and will often search for alternative solutions
@@ -139,6 +235,9 @@ class LandingMain extends React.Component {
                 same consideration from their colleagues. They believe in the golden rule—do to others what you would
                 like done to you.
               </p>
+              <h3 class="pink">Cultural values that drive you:</h3>
+              <h4 class="pink">dutifulness; unity; respect for wisdom; power; authority; loyalty; nurture; connection; collaboration</h4>
+
             </div>
           </div>
           <a href={NOUCHUKI_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
@@ -170,15 +269,15 @@ class LandingMain extends React.Component {
                 You are laid back, whole-hearted, and someone who enjoys the finer things in life. The Rilsukese have a
                 saying <i>“Ti cestas nianem reva kotika ed pazhi siga ti osi nianem ed zhin”</i>, which loosely translates as
                 “You will never truly be satisfied by work until you are satisfied by life.” You work hard and play hard
-                and your dream is to work for a company that lets you balance work and play. Arriving a little late,
+                and your dream is to work for a company that lets you balance and integrate work and play. Arriving a little late,
                 leaving a little early, joking, and chatting are just part of what makes work fun. A relaxed atmosphere
                 isn’t a problem as long as the work gets done. When you can find passion in your work, you flourish.
               </p>
               <p>
                 You value relationships and are good at building strong relationships as you spend time and effort to
                 build trust. You believe that the best workplaces encourage friendship between coworkers. Loyalty is
-                paramount and you believe that colleagues should cover for one another and help each other out—all
-                for one and one for all! Organizations that are structured rigidly or where there is a strong hierarchical
+                paramount and you believe that colleagues should cover for one another and help each other out.
+                Organizations that are structured rigidly or where there is a strong hierarchical
                 system is not where you want to be. You prefer a participative work environment and expect to be
                 consulted in decision-making. As such, you feel more comfortable when you’ve run your own ideas past
                 several people. After all, two heads are better than one.
@@ -192,11 +291,12 @@ class LandingMain extends React.Component {
               </p>
               <p>
                 You’re accommodating when co-workers have work-life conflicts and you expect the same in return.
-                Like the Rilsukese, you want to make people smile and brighten their day—even when at work. You just
-                wish everyone saw work that way. You see nothing wrong with having a good time in a professional
-                context. You often initiate birthday celebrations, theme days, or group excursions to promote
-                camaraderie.
+                Like the Rilsukese, you want to make people smile and brighten their day—even when at work.
+                You see nothing wrong with having a good time in a professional context. You just
+                wish everyone saw work that way.
               </p>
+              <h3 class="pink">Cultural values that drive you:</h3>
+              <h4 class="pink">cooperation; reciprocity; fairness; equity; negotiation; flexible; trust; work-life symbiosis</h4>
             </div>
           </div>
           <a href={RILSUKYA_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
@@ -251,8 +351,10 @@ class LandingMain extends React.Component {
                 Precision and perfection are important to you in all that you do. It is important that you get things right,
                 so you take the time to work carefully and avoid making mistakes. The Anjogians phrase <i>“eleyinewa
                 ayelicha”</i> reflects your drive for excellence that is seen in your cities, art, products and lifestyle – high
-                quality, unusual simplicity, integrated into the ecosystem and elegant.
+                quality, unusual simplicity, and integrated into the ecosystem.
               </p>
+              <h3 class="pink">Cultural values that drive you:</h3>
+              <h4 class="pink">excellence; achievement; efficiency; autonomy; compliance; collegial; persevering; decisive; focused</h4>
             </div>
           </div>
           <a href={ANJOGEY_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
@@ -310,6 +412,8 @@ class LandingMain extends React.Component {
                 your best. You love the energy of Walthanoo and your drive and determination will help you prosper
                 here.
               </p>
+              <h3 class="pink">Cultural values that drive you:</h3>
+              <h4 class="pink">independence; uniqueness; individuality; autonomy; self-actualization; initiative; empowerment; equality</h4>
             </div>
           </div>
           <a href={WALTHANOO_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
