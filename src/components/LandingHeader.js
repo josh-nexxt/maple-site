@@ -37,6 +37,13 @@ const LandingHeader = props => {
           </li>
           <li>
             <button
+              onClick={() => handleClick('faq')}
+            >
+              FAQs
+            </button>
+          </li>
+          <li>
+            <button
               onClick={() => handleClick('about')}
             >
               About

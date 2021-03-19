@@ -5,6 +5,14 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
+var clickedOnScrollbar = function(mouseX){
+  console.log("mouseX:", mouseX);
+  console.log("window.innerWidth:", window.innerWidth);
+  if( window.innerWidth <= mouseX + 30 ){
+    return true;
+  }
+}
+
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)
@@ -39,7 +47,7 @@ class IndexPage extends React.Component {
     this.wrapperRef = node;
   }
 
-  handleOpenArticle(article) {
+  handleOpenArticle(article, slowTransition = true) {
 
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
@@ -50,17 +58,17 @@ class IndexPage extends React.Component {
       this.setState({
         timeout: !this.state.timeout
       })
-    }, 325)
+    }, slowTransition ? 325 : 125)
 
     setTimeout(() => {
       this.setState({
         articleTimeout: !this.state.articleTimeout
       })
-    }, 350)
+    }, slowTransition ? 350 : 150)
 
   }
 
-  handleCloseArticle() {
+  handleCloseArticle(slowTransition = true) {
 
     this.setState({
       articleTimeout: !this.state.articleTimeout
@@ -70,18 +78,23 @@ class IndexPage extends React.Component {
       this.setState({
         timeout: !this.state.timeout
       })
-    }, 325)
+    }, slowTransition ? 325 : 125)
 
     setTimeout(() => {
       this.setState({
         isArticleVisible: !this.state.isArticleVisible,
         article: ''
       })
-    }, 350)
+    }, slowTransition ? 350 : 150)
 
   }
 
   handleClickOutside(event) {
+
+    if( clickedOnScrollbar(event.clientX) ){
+      return;
+    }
+
     if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
       if (this.state.isArticleVisible) {
         this.handleCloseArticle();
@@ -100,6 +113,7 @@ class IndexPage extends React.Component {
               timeout={this.state.timeout}
               articleTimeout={this.state.articleTimeout}
               article={this.state.article}
+              onOpenArticle={this.handleOpenArticle}
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
             />

@@ -129,7 +129,7 @@ const Header = props => {
             <h2>A cultural assessment tool</h2>
           </div>
         </div>
-        <nav className="corner-nav" style={{display: 'none'}}>
+        <nav className="corner-nav">
           <ul className="ul-border">
             <li>
               <Link to='https://inca.nexxt.in/p/MAPLEBETA'>
