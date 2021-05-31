@@ -237,6 +237,10 @@ class LandingMain extends React.Component {
               </p>
               <h3 class="pink">Cultural values that drive you:</h3>
               <h4 class="pink">dutifulness; unity; respect for wisdom; power; authority; loyalty; nurture; connection; collaboration</h4>
+              <span>
+                To learn more about culture and intercultural communication, check out the <a class="pink" href='https://www.rotman.utoronto.ca/ProfessionalDevelopment/interculturalskillslab'>Intercultural Skills Lab website</a>. 
+                Our programs and tools offer you and your team strategies and insights into how global skills can be explored and integrated.
+              </span>
 
             </div>
           </div>
@@ -297,6 +301,10 @@ class LandingMain extends React.Component {
               </p>
               <h3 class="pink">Cultural values that drive you:</h3>
               <h4 class="pink">cooperation; reciprocity; fairness; equity; negotiation; flexible; trust; work-life symbiosis</h4>
+              <span>
+                To learn more about culture and intercultural communication, check out the <a class="pink" href='https://www.rotman.utoronto.ca/ProfessionalDevelopment/interculturalskillslab'>Intercultural Skills Lab website</a>. 
+                Our programs and tools offer you and your team strategies and insights into how global skills can be explored and integrated.
+              </span>
             </div>
           </div>
           <a href={RILSUKYA_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
@@ -355,6 +363,10 @@ class LandingMain extends React.Component {
               </p>
               <h3 class="pink">Cultural values that drive you:</h3>
               <h4 class="pink">excellence; achievement; efficiency; autonomy; compliance; collegial; persevering; decisive; focused</h4>
+              <span>
+                To learn more about culture and intercultural communication, check out the <a class="pink" href='https://www.rotman.utoronto.ca/ProfessionalDevelopment/interculturalskillslab'>Intercultural Skills Lab website</a>. 
+                Our programs and tools offer you and your team strategies and insights into how global skills can be explored and integrated.
+              </span>
             </div>
           </div>
           <a href={ANJOGEY_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
@@ -414,6 +426,10 @@ class LandingMain extends React.Component {
               </p>
               <h3 class="pink">Cultural values that drive you:</h3>
               <h4 class="pink">independence; uniqueness; individuality; autonomy; self-actualization; initiative; empowerment; equality</h4>
+              <span>
+                To learn more about culture and intercultural communication, check out the <a class="pink" href='https://www.rotman.utoronto.ca/ProfessionalDevelopment/interculturalskillslab'>Intercultural Skills Lab website</a>. 
+                Our programs and tools offer you and your team strategies and insights into how global skills can be explored and integrated.
+              </span>
             </div>
           </div>
           <a href={WALTHANOO_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
