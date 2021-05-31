@@ -1,19 +1,11 @@
-# gatsby-starter-dimension
+# maple-site
 
-**This is a starter for Gatsby.js V2.**
+This project is forked from [gatsby-starter-dimension](https://github.com/codebushi/gatsby-starter-dimension), which is a Gatsby.js V2 starter based on the Dimension site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.
 
-**The older V1 version of this starter can be found on the v1 branch:**
+## Development
 
-Gatsby.js V2 starter based on the Dimension site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.
+Assuming you have Gatsby installed and this repository cloned, you can simply run `yarn develop` or `gatsby` develop to run the web application on port 8000.
 
-## Preview
+## Deployment
 
-https://gatsby-dimension.surge.sh/
-
-## Installation
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-<br/>
-`gatsby new gatsby-starter-dimension https://github.com/codebushi/gatsby-starter-dimension`
-
-Run `gatsby develop` in the terminal to start the dev site.
+This site is deployed using AWS Amplify. Any changes to the `dev` branch will be deployed to https://devmode.interculturalskillslab.com and any changes to `master` will automatically deploy to https://interculturalskillslab.com
