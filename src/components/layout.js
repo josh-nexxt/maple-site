@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import '../assets/scss/main.scss'
-import preview from '../images/preview.png'
 
 const Layout = ({ children, location }) => {
 
@@ -34,12 +33,12 @@ const Layout = ({ children, location }) => {
               { name: 'og:url', content: 'https://interculturalskillslab.com' },
               { name: 'og:title', content: 'MAPLE beta 2.1' },
               { name: 'og:description', content: 'A cultural assessment tool from the Intercultural Skills Lab' },
-              { name: 'og:image', content: data.site.siteMetadata.url + preview },
+              { name: 'og:image', content: `${data.site.siteMetadata.url}/preview.png` },
               { name: 'twitter:card', content: 'summary_large_image' },
               { name: 'twitter:url', content: 'https://interculturalskillslab.com' },
               { name: 'twitter:title', content: 'MAPLE beta 2.1' },
               { name: 'twitter:description', content: 'A cultural assessment tool from the Intercultural Skills Lab' },
-              { name: 'twitter:image', content: data.site.siteMetadata.url + preview },
+              { name: 'twitter:image', content: `${data.site.siteMetadata.url}/preview.png` },
 
             ]}
           >
