@@ -16,7 +16,8 @@ const Layout = ({ children, location }) => {
         query SiteTitleQuery {
           site {
             siteMetadata {
-              title
+              title,
+              url
             }
           }
         }
@@ -33,12 +34,12 @@ const Layout = ({ children, location }) => {
               { name: 'og:url', content: 'https://interculturalskillslab.com' },
               { name: 'og:title', content: 'MAPLE beta 2.1' },
               { name: 'og:description', content: 'A cultural assessment tool from the Intercultural Skills Lab' },
-              { name: 'og:image', content: preview },
+              { name: 'og:image', content: data.site.siteMetadata.url + preview },
               { name: 'twitter:card', content: 'summary_large_image' },
               { name: 'twitter:url', content: 'https://interculturalskillslab.com' },
               { name: 'twitter:title', content: 'MAPLE beta 2.1' },
               { name: 'twitter:description', content: 'A cultural assessment tool from the Intercultural Skills Lab' },
-              { name: 'twitter:image', content: preview },
+              { name: 'twitter:image', content: data.site.siteMetadata.url + preview },
 
             ]}
           >
