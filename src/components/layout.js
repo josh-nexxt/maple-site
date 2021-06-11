@@ -33,7 +33,7 @@ const Layout = ({ children, location }) => {
             <meta key={4} name='og:url' content='https://interculturalskillslab.com' />
             <meta key={5} name='og:title' content='MAPLE beta 2.1' />
             <meta key={6} name='og:description' content='MAPLE is a cultural assessment tool designed at the Rotman School that helps people understand their place in a diverse and multicultural workplace. Try the beta version of this tool and get a first glimpse of how MAPLE is set to change the way we relate to our work, and each other.' />
-            <meta key={7} name='og:image' content={`${data.site.siteMetadata.url}/preview.png`} />
+            <meta key={7} name='image' property='og:image' content={`${data.site.siteMetadata.url}/preview.png`} />
             <meta key={8} name='twitter:card' content='summary_large_image' />
             <meta key={9} name='twitter:url' content='https://interculturalskillslab.com' />
             <meta key={10} name='twitter:title' content='MAPLE beta 2.1' />
