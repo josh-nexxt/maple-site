@@ -6,13 +6,13 @@
   "dependencies": {
     "gatsby": "^2.19.5",
     "gatsby-plugin-manifest": "^2.2.38",
-    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-react-helmet": "^4.7.1",
     "gatsby-plugin-sass": "^2.1.27",
     "gatsby-source-filesystem": "^2.5.0",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
+    "react-helmet": "^6.1.0",
     "react-media": "^2.0.0-rc.1",
     "react-share": "^4.3.1"
   },
