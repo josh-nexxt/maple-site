@@ -7,6 +7,10 @@
 /* Main */
 
 #main.landing {
+	pointer-events: none;
+	> * { 
+		pointer-events: auto;
+	}
 	article {
 		width: 90% !important;
 		margin: 0 auto;
