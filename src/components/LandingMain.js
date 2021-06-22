@@ -24,7 +24,7 @@ class LandingMain extends React.Component {
         ref={this.props.setWrapperRef}
         id="main"
         className="landing"
-        style={{display: this.props.timeout ? 'block' : 'none', minWidth: '100%'}}
+        style={{display: this.props.timeout ? 'block' : 'none', minWidth: '100%', pointerEvents: 'none'}}
       >
         <article
           id="faq"
